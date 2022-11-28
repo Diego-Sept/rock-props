@@ -8,9 +8,17 @@ export const locale = {
           ANALYTICS: 'Analytics',
           ECOMMERCE: 'Dashboard'
         },
+        CONTACT: {
+          SECTION: 'Contacto',
+          SUPPORT: 'Soporte',
+          MESSAGEAUDITOR: 'Auditoria de Mensajes',
+        },
         APPS: {
           SECTION: 'Apps & Páginas',
           EMAIL: 'Email',
+          ESTATES: 'Inmuebles',
+          PUBLICITY: 'Publicidad',
+          MEMBERSHIPS:'Membresias',
           CHAT: 'Chat',
           TODO: 'Todo',
           CALENDAR: 'Calendario',
@@ -29,7 +37,7 @@ export const locale = {
             CHECKOUT: 'Checkout'
           },
           USER: {
-            COLLAPSIBLE: 'Usuario',
+            COLLAPSIBLE: 'Usuarios',
             LIST: 'Listado',
             VIEW: 'Ver',
             EDIT: 'Editar'
