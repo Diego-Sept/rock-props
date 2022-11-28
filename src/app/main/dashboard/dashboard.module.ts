@@ -18,17 +18,18 @@ import { InvoiceListService } from 'app/main/apps/invoice/invoice-list/invoice-l
 
 import { DashboardService } from 'app/main/dashboard/dashboard.service';
 
+import { AnalyticsComponent } from './analytics/analytics.component';
 import { EcommerceComponent } from 'app/main/dashboard/ecommerce/ecommerce.component';
 
 const routes = [
   {
     path: '',
-    component: EcommerceComponent,
+    component: AnalyticsComponent,
     canActivate: [AuthGuard],
     resolve: {
       css: DashboardService
     },
-    data: { animation: 'decommerce' }
+    data: { animation: 'danalytics' }
   }
 ];
 
