@@ -6,6 +6,9 @@ import { Subject } from 'rxjs';
 
 import { AuthenticationService } from 'app/auth/service';
 import { CoreConfigService } from '@core/services/config.service';
+import { locale as english } from 'app/i18n/en';
+import { locale as spanish } from 'app/i18n/es';
+import { CoreTranslationService } from '@core/services/translation.service';
 
 @Component({
   selector: 'app-auth-login-v2',
@@ -36,12 +39,15 @@ export class AuthLoginV2Component implements OnInit {
     private _formBuilder: UntypedFormBuilder,
     private _route: ActivatedRoute,
     private _router: Router,
-    private _authenticationService: AuthenticationService
+    private _authenticationService: AuthenticationService,
+    private _coreTranslationService: CoreTranslationService
   ) {
     // redirect to home if already logged in
     if (this._authenticationService.currentUserValue) {
       this._router.navigate(['/']);
     }
+
+    this._coreTranslationService.translate(english, spanish);
 
     this._unsubscribeAll = new Subject();
 

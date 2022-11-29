@@ -101,7 +101,7 @@ export class AppComponent implements OnInit, OnDestroy {
       // Change application language? Read the ngxTranslate Fix
 
       // ? Use app-config.ts file to set default language
-      const appLanguage = this.coreConfig.app.appLanguage || 'en';
+      const appLanguage = this.coreConfig.app.appLanguage || 'es';
       this._translateService.use(appLanguage);
 
       // ? OR
